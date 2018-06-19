@@ -1,0 +1,27 @@
+[
+  {
+    "img": "./images/image1.jpg",
+    "title": "Title1",
+    "size": 4
+  },
+  {
+    "img": "./images/image2.png",
+    "title": "Title2",
+    "size": 35
+  },
+  {
+    "img": "./images/image3.png",
+    "title": "Title3",
+    "size": 22
+  },
+  {
+    "img": "./images/image4.png",
+    "title": "Title4",
+    "size": 44
+  },
+  {
+    "img": "./images/image4.png",
+    "title": "Title5",
+    "size": 12
+  }
+]

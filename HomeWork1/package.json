@@ -1,0 +1,17 @@
+{
+  "name": "fr-end-plus",
+  "version": "1.0.0",
+  "description": "Test project for learning perspective",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "Eugen Epishev",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^2.0.4"
+  }
+}
