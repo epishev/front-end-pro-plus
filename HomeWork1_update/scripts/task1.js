@@ -9,20 +9,21 @@ function sortArray(array) {
 }
 
 function simpleValues(array) {
-    let B = [];
-    for(let i = 0; i < array.length;i++) {
+     let b = [];
+     array.forEach(item => {
         let isPrime = true;
-        if (array[i].value > 1) {
-            for (let j = 2; j < array[i].value; j++) {
-                if (array[i].value % j == 0) {
+        if (item.value <= 1) {
+            return;
+        }
+        for (let i = 2; i < item.value; i++) {
+                if (item.value % i == 0) {
                     isPrime = false;
                     break;
                 }
             }
-            if (isPrime) {
-                B.push(array[i].value);
-            } else continue;
+        if (isPrime) {
+                b.push(item.value);
         }
-    }
-    return B;
-}
+    });
+    return b;
+};
