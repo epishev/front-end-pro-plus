@@ -9,5 +9,20 @@ function sortArray(array) {
 }
 
 function simpleValues(array) {
-   return array.map( item => item.value);
+    let B = [];
+    for(let i = 0; i < array.length;i++) {
+        let isPrime = true;
+        if (array[i].value > 1) {
+            for (let j = 2; j < array[i].value; j++) {
+                if (array[i].value % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                B.push(array[i].value);
+            } else continue;
+        }
+    }
+    return B;
 }
