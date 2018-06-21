@@ -15,18 +15,17 @@ class Data {
 class ViewController extends Data {
     constructor() {
         super();
+
     }
     render(array,container){
-        let goodsForm = '';
-        for (let i = 0; i< array.length; i++) {
-            goodsForm = `<div class = "block">
-         <div><img src="${array[i].img}"></div>
-         <div>${array[i].title}</div>
-         <div>${array[i].size}</div>
+        container.innerHTML = array.map(item => {
+         let goodsForm = `<div class = "block">
+         <div><img src="${item.img}"></div>
+         <div>${item.title}</div>
+         <div>${item.size}</div>
          </div>`;
-
-         container.innerHTML += goodsForm;
-        }
+         return goodsForm;
+        }).join('');
     }
 }
 
