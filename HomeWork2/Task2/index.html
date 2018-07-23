@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork2</title>
+    <style>
+        .image  {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .tableContainer {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image"></div>
+<div class="tableContainer">
+    <table class="table">
+        <tr>
+            <th>Repository name</th>
+            <th>Default branch</th>
+            <th>Last update</th>
+            <th>Languages</th>
+        </tr>
+    </table>
+</div>
+
+
+
+<script src="node_modules/systemjs/dist/system.js"></script>
+
+<script>
+    System.config({
+        meta: {
+            format: 'cjs'
+        }
+    });
+    System.import('scripts/app.js');
+</script>
+</body>
+</html>
